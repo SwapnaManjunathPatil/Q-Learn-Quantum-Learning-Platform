@@ -1,0 +1,358 @@
+/* =========================================================
+   Q-LEARN NAVBAR
+   ========================================================= */
+
+.ql-navbar {
+  position: relative;
+
+  width: min(1240px, calc(100% - 48px));
+
+  height: 76px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+
+  z-index: 100;
+}
+
+/* =========================================================
+   BRAND
+   ========================================================= */
+
+.ql-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  min-width: 205px;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.ql-brand-mark {
+  position: relative;
+
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid rgba(103, 232, 249, 0.3);
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(103, 232, 249, 0.1),
+      rgba(129, 140, 248, 0.08)
+    );
+
+  color: #67e8f9;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  box-shadow:
+    0 0 25px rgba(103, 232, 249, 0.05);
+}
+
+.ql-brand-mark::before,
+.ql-brand-mark::after {
+  content: "";
+
+  position: absolute;
+
+  border: 1px solid rgba(103, 232, 249, 0.2);
+
+  border-radius: 50%;
+}
+
+.ql-brand-mark::before {
+  width: 22px;
+  height: 8px;
+
+  transform: rotate(35deg);
+}
+
+.ql-brand-mark::after {
+  width: 22px;
+  height: 8px;
+
+  transform: rotate(-35deg);
+}
+
+.ql-brand-mark span {
+  position: relative;
+  z-index: 2;
+}
+
+.ql-brand-mark i {
+  position: absolute;
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: #67e8f9;
+
+  box-shadow:
+    0 0 8px rgba(103, 232, 249, 0.8);
+}
+
+.ql-brand-text {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.ql-brand-name {
+  color: #f1f5ff;
+
+  font-size: 17px;
+  font-weight: 750;
+
+  letter-spacing: -0.025em;
+}
+
+.ql-brand-subtitle {
+  color: #62718a;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.ql-nav-links {
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  padding: 4px;
+
+  border: 1px solid rgba(148, 163, 184, 0.07);
+  border-radius: 13px;
+
+  background: rgba(255, 255, 255, 0.018);
+}
+
+.ql-nav-link {
+  position: relative;
+
+  min-height: 40px;
+
+  padding: 0 15px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: transparent;
+
+  color: #718099;
+
+  font-size: 12px;
+  font-weight: 650;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.ql-nav-link:hover {
+  color: #d8e1f1;
+
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.ql-nav-link.active {
+  color: #eefbff;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(103, 232, 249, 0.09),
+      rgba(129, 140, 248, 0.08)
+    );
+}
+
+.ql-nav-active-dot {
+  position: absolute;
+
+  bottom: 4px;
+  left: 50%;
+
+  width: 4px;
+  height: 4px;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background: #67e8f9;
+
+  box-shadow:
+    0 0 8px rgba(103, 232, 249, 0.7);
+}
+
+/* =========================================================
+   QUANTUM LAB STATUS
+   ========================================================= */
+
+.ql-lab-status {
+  min-width: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 9px;
+}
+
+.ql-status-indicator {
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #34d399;
+
+  box-shadow:
+    0 0 10px rgba(52, 211, 153, 0.6);
+}
+
+.ql-status-text {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.ql-status-text strong {
+  color: #aebbd0;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.ql-status-text span {
+  color: #4e5d74;
+
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.ql-brand:focus-visible,
+.ql-nav-link:focus-visible {
+  outline: 2px solid rgba(103, 232, 249, 0.6);
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+  .ql-navbar {
+    width: min(100% - 24px, 1240px);
+
+    gap: 15px;
+  }
+
+  .ql-brand {
+    min-width: auto;
+  }
+
+  .ql-brand-subtitle {
+    display: none;
+  }
+
+  .ql-nav-link {
+    padding: 0 11px;
+  }
+
+  .ql-lab-status {
+    min-width: auto;
+  }
+
+  .ql-status-text {
+    display: none;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+  .ql-navbar {
+    height: auto;
+
+    min-height: 70px;
+
+    flex-wrap: wrap;
+
+    padding: 12px 0;
+  }
+
+  .ql-brand {
+    flex: 1;
+  }
+
+  .ql-nav-links {
+    order: 3;
+
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+  .ql-nav-link {
+    flex: 1;
+
+    padding: 0 7px;
+
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 400px) {
+  .ql-brand-name {
+    font-size: 15px;
+  }
+
+  .ql-brand-mark {
+    width: 34px;
+    height: 34px;
+  }
+
+  .ql-nav-link {
+    font-size: 10px;
+  }
+}

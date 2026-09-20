@@ -1,0 +1,876 @@
+/* =========================================================
+   ALGORITHM DETAIL PAGE
+   ========================================================= */
+
+.algorithm-detail-page {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 30px 24px 60px;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+
+.back-button {
+  margin-bottom: 20px;
+  padding: 9px 15px;
+  border: 1px solid #dbe3ee;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.back-button:hover {
+  background: #f8fafc;
+  border-color: #a5b4fc;
+  color: #4338ca;
+}
+
+/* =========================================================
+   ALGORITHM CARD
+   ========================================================= */
+
+.algorithm-detail-card {
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.algorithm-detail-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  border-radius: 18px;
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  font-size: 30px;
+}
+
+.level {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.algorithm-detail-card h1 {
+  margin: 5px 0 10px;
+  color: #111827;
+  font-size: 34px;
+  font-weight: 850;
+}
+
+.algorithm-description {
+  max-width: 850px;
+  margin: 0;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   CONCEPTS
+   ========================================================= */
+
+.concept-section {
+  margin-top: 25px;
+}
+
+.concept-section h2,
+.explanation-section h2 {
+  margin: 0 0 12px;
+  color: #1f2937;
+  font-size: 17px;
+}
+
+.concepts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.concept {
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   EXPLANATION
+   ========================================================= */
+
+.explanation-section {
+  margin-top: 25px;
+  padding: 18px;
+  border-radius: 15px;
+  background: #f8faff;
+  border: 1px solid #dbeafe;
+}
+
+.explanation-section p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   START MODULE
+   ========================================================= */
+
+.module-start-section {
+  margin-top: 28px;
+  padding-top: 25px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.module-start-section h2 {
+  margin: 0 0 7px;
+  color: #1f2937;
+  font-size: 19px;
+}
+
+.module-start-section p {
+  max-width: 700px;
+  margin: 0 0 17px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.start-module-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 11px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.2);
+  transition: 0.2s ease;
+}
+
+.start-module-btn:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+.start-module-btn:active {
+  transform: translateY(0);
+}
+
+/* =========================================================
+   LEARNING PROGRESS
+   ========================================================= */
+
+.learning-progress-container {
+  margin-top: 24px;
+  padding: 20px 22px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.learning-progress-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 14px;
+}
+
+.learning-progress-header div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.learning-progress-header span {
+  color: #6366f1;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.4px;
+}
+
+.learning-progress-header strong {
+  color: #1f2937;
+  font-size: 13px;
+}
+
+.learning-progress-bar {
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e5e7eb;
+}
+
+.learning-progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  transition: width 0.35s ease;
+}
+
+.learning-progress-steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.learning-progress-steps span {
+  color: #94a3b8;
+  font-size: 10px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.learning-progress-steps span.completed {
+  color: #4f46e5;
+}
+
+/* =========================================================
+   STAGE HEADING
+   ========================================================= */
+
+.stage-heading {
+  margin-bottom: 20px;
+}
+
+.stage-heading > span {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: #6366f1;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.stage-heading h2 {
+  margin: 0 0 6px;
+  color: #1f2937;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.stage-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   LEARNING STAGES
+   ========================================================= */
+
+.algorithm-teacher-section,
+.algorithm-predict-section,
+.algorithm-circuit-section,
+.algorithm-execute-section,
+.algorithm-understanding-section {
+  margin-top: 25px;
+  animation: learningStageIn 0.3s ease;
+}
+
+@keyframes learningStageIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   LEARNING TOOLS
+   ========================================================= */
+
+.learning-tools-section {
+  margin-top: 28px;
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+}
+
+.learning-tools-header {
+  margin-bottom: 18px;
+}
+
+.tools-eyebrow {
+  display: block;
+  margin-bottom: 5px;
+  color: #6366f1;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.learning-tools-header h2 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 21px;
+}
+
+.learning-tools-header p {
+  margin: 5px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* =========================================================
+   TOOL BUTTONS
+   ========================================================= */
+
+.learning-tool-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.learning-tool-button {
+  min-height: 85px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  background: #ffffff;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.learning-tool-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.07);
+}
+
+/* =========================================================
+   BUTTON ICON
+   ========================================================= */
+
+.tool-button-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: #eef2ff;
+  font-size: 23px;
+}
+
+/* =========================================================
+   BUTTON TEXT
+   ========================================================= */
+
+.tool-button-content {
+  flex: 1;
+}
+
+.tool-button-content strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.tool-button-content span {
+  display: block;
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+/* =========================================================
+   ARROW
+   ========================================================= */
+
+.tool-button-arrow {
+  color: #94a3b8;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+/* =========================================================
+   TUTOR BUTTON
+   ========================================================= */
+
+.tutor-button:hover,
+.tutor-button.active {
+  border-color: #818cf8;
+  background: #f8f7ff;
+}
+
+.tutor-button.active .tool-button-icon {
+  background: #e0e7ff;
+}
+
+.tutor-button.active .tool-button-arrow {
+  color: #4f46e5;
+}
+
+/* =========================================================
+   CIRCUIT BUTTON
+   ========================================================= */
+
+.circuit-button:hover,
+.circuit-button.active {
+  border-color: #6366f1;
+  background: #f8f7ff;
+}
+
+.circuit-button.active .tool-button-icon {
+  background: #e0e7ff;
+}
+
+.circuit-button.active .tool-button-arrow {
+  color: #4f46e5;
+}
+
+/* =========================================================
+   MEASUREMENT BUTTON
+   ========================================================= */
+
+.measurement-button {
+  border-color: #ccfbf1;
+}
+
+.measurement-button:hover {
+  border-color: #0d9488;
+  background: #f0fdfa;
+}
+
+.measurement-button.active {
+  border-color: #0d9488;
+  background: #f0fdfa;
+}
+
+.measurement-button .tool-button-icon {
+  background: #ccfbf1;
+}
+
+.measurement-button.active .tool-button-arrow {
+  color: #0d9488;
+}
+
+/* =========================================================
+   BLOCH SPHERE BUTTON
+   ========================================================= */
+
+.bloch-button {
+  border-color: #ddd6fe;
+}
+
+.bloch-button:hover {
+  border-color: #8b5cf6;
+  background: #f5f3ff;
+}
+
+.bloch-button.active {
+  border-color: #7c3aed;
+  background: #f5f3ff;
+}
+
+.bloch-button .tool-button-icon {
+  background: #ede9fe;
+}
+
+.bloch-button.active .tool-button-arrow {
+  color: #7c3aed;
+}
+
+/* =========================================================
+   OPENED SECTIONS
+   ========================================================= */
+
+.algorithm-tutor-section,
+.algorithm-circuit-section,
+.algorithm-measurement-section,
+.algorithm-bloch-section {
+  width: 100%;
+  margin-top: 22px;
+  animation: openLearningTool 0.25s ease;
+}
+
+@keyframes openLearningTool {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   BLOCH SPHERE
+   ========================================================= */
+
+.algorithm-bloch-section {
+  margin-top: 24px;
+  animation: blochSectionIn 0.3s ease;
+}
+
+@keyframes blochSectionIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   COMPLETION
+   ========================================================= */
+
+.algorithm-complete-section {
+  margin-top: 25px;
+  padding: 38px 30px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  animation: completionIn 0.35s ease;
+}
+
+@keyframes completionIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.completion-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #059669;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.completion-label {
+  display: block;
+  margin-bottom: 7px;
+  color: #059669;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.algorithm-complete-section h2 {
+  margin: 0 0 8px;
+  color: #1f2937;
+  font-size: 25px;
+}
+
+.algorithm-complete-section p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.completion-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 25px;
+}
+
+.completion-flow span {
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.completion-flow b {
+  color: #10b981;
+  font-size: 13px;
+}
+
+/* =========================================================
+   POST LEARNING
+   ========================================================= */
+
+.post-learning-section {
+  margin-top: 25px;
+  padding: 27px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04);
+}
+
+.post-learning-header {
+  margin-bottom: 18px;
+}
+
+.post-learning-header > span {
+  display: block;
+  margin-bottom: 5px;
+  color: #6366f1;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.post-learning-header h2 {
+  margin: 0 0 5px;
+  color: #1f2937;
+  font-size: 21px;
+}
+
+.post-learning-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* =========================================================
+   POST LEARNING TOOL BUTTONS
+   ========================================================= */
+
+.post-learning-tools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+}
+
+.post-tool-button {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  background: #ffffff;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.post-tool-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.07);
+}
+
+.post-tool-button > div:nth-child(2) {
+  flex: 1;
+}
+
+.post-tool-icon {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #eef2ff;
+  font-size: 20px;
+}
+
+.post-tool-button strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #1f2937;
+  font-size: 13px;
+}
+
+.post-tool-button span {
+  display: block;
+  color: #94a3b8;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.post-tool-button > b {
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+.post-tool-button.active {
+  border-color: #818cf8;
+  background: #f8f7ff;
+}
+
+.post-tool-button.active > b {
+  color: #4f46e5;
+}
+
+/* =========================================================
+   AI TUTOR / EXTRA SECTIONS
+   ========================================================= */
+
+.algorithm-tutor-section {
+  padding-bottom: 5px;
+}
+
+.algorithm-measurement-section {
+  padding-bottom: 5px;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .post-learning-tools {
+    grid-template-columns: 1fr;
+  }
+
+  .post-tool-button {
+    min-height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .algorithm-detail-page {
+    padding: 20px 15px 45px;
+  }
+
+  .algorithm-detail-card {
+    padding: 22px;
+  }
+
+  .algorithm-detail-card h1 {
+    font-size: 27px;
+  }
+
+  .learning-tool-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-tools-section {
+    padding: 19px;
+  }
+
+  .learning-progress-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .learning-progress-steps {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .learning-progress-steps span {
+    min-width: 75px;
+  }
+
+  .stage-heading h2 {
+    font-size: 21px;
+  }
+
+  .algorithm-complete-section {
+    padding: 30px 20px;
+  }
+
+  .post-learning-section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .algorithm-detail-card {
+    padding: 18px;
+  }
+
+  .algorithm-detail-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 25px;
+  }
+
+  .algorithm-detail-card h1 {
+    font-size: 24px;
+  }
+
+  .learning-tool-button {
+    min-height: 75px;
+    padding: 12px;
+  }
+
+  .tool-button-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+  }
+
+  .algorithm-complete-section h2 {
+    font-size: 21px;
+  }
+
+  .completion-flow {
+    gap: 6px;
+  }
+
+  .completion-flow span {
+    font-size: 10px;
+    padding: 6px 9px;
+  }
+}
