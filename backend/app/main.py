@@ -27,7 +27,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
-        "https://q-learn-backend.onrender.com"
+        "https://q-learn-frontend.onrender.com"
     ],
     allow_credentials=True,
     allow_methods=["*"],
